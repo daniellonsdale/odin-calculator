@@ -1,21 +1,38 @@
-const ce = document.querySelector("#id");
-const c = document.querySelector("#c");
-const del = document.querySelector("#delete");
-const divide = document.querySelector("#divide");
-const seven = document.querySelector("#seven");
-const eigth = document.querySelector("#eight");
-const nine = document.querySelector("#nine");
-const multiply = document.querySelector("#multiply");
-const four = document.querySelector("#four");
-const five = document.querySelector("#five");
-const six = document.querySelector("#six");
-const subtract = document.querySelector("#subtract");
-const one = document.querySelector("#one");
-const two = document.querySelector("#two");
-const three = document.querySelector("#three");
-const add = document.querySelector("#add");
-const plusMinus = document.querySelector("#plus-minus");
-const zero = document.querySelector("#zero");
-const decimal = document.querySelector("#decimal");
-const equals = document.querySelector("#equals");
+const ceButton = document.querySelector("#id");
+const cButton = document.querySelector("#c");
+const deleteButton = document.querySelector("#delete");
+const divideButton = document.querySelector("#divide");
+const sevenButton = document.querySelector("#seven");
+const eigthButton = document.querySelector("#eight");
+const nineButton = document.querySelector("#nine");
+const multiplyButton = document.querySelector("#multiply");
+const fourButton = document.querySelector("#four");
+const fiveButton = document.querySelector("#five");
+const sixButton = document.querySelector("#six");
+const subtractButton = document.querySelector("#subtract");
+const oneButton = document.querySelector("#one");
+const twoButton = document.querySelector("#two");
+const threeButton = document.querySelector("#three");
+const addButton = document.querySelector("#add");
+const plusMinusButton = document.querySelector("#plus-minus");
+const zeroButton = document.querySelector("#zero");
+const decimalButton = document.querySelector("#decimal");
+const equalsButton = document.querySelector("#equals");
+const displayButton = document.querySelector("#display");
+
+function add(numOne, numTwo){
+    return numOne + numTwo;
+}
+
+function subtract(numOne, numTwo){
+    return numOne - numTwo;
+}
+
+function multiply(numOne, numTwo){
+    return numOne * numTwo;
+}
+
+function divide(numOne, numTwo){
+    return numOne/numTwo;
+}
 
