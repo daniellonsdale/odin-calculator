@@ -40,10 +40,19 @@ body{
     box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
 }
 
-#display{
-    margin-right: 2px;
+#display-box{
     font-size: 46px;
     align-self: flex-end;
+    background-color: rgba(240, 248, 255, 0.84);
+    border-radius: 5px;
+    margin: 6px;
+    width: 398px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#display{
+    margin-right: 2px;
 }
 
 .manipulator, .operator{
