@@ -20,6 +20,11 @@ const decimalButton = document.querySelector("#decimal");
 const equalsButton = document.querySelector("#equals");
 const displayButton = document.querySelector("#display");
 
+let displayValue = 0;
+let inputOne;
+let inputTwo;
+let operator; 
+
 function add(numOne, numTwo){
     return numOne + numTwo;
 }
