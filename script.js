@@ -21,10 +21,11 @@ const equalsButton = document.querySelector("#equals");
 const display = document.querySelector("#display");
 
 const numberButtons = document.querySelectorAll(".number");
+const operatorButtons = document.querySelectorAll(".operator");
 
 let inputOne = 0;
 let inputTwo = 0;
-let operator;
+let operator = "";
 let curDecimalCount = 0; 
 
 display.textContent = 0;
@@ -93,4 +94,28 @@ cButton.addEventListener("click", () => {
 
 deleteButton.addEventListener("click", () => {
     display.textContent = display.textContent.substring(0, display.textContent.length - 1);
+});
+
+operatorButtons.forEach(function(button){
+    button.addEventListener("click", () => {
+        inputOne = display.textContent;
+        display.textContent = 0;
+
+        switch (button.textContent){
+            case "÷":
+                operator = "divide";
+                break;
+            case "×":
+                operator = "multiply";
+                break;
+            case "₊":
+                operator = "add";
+                break;
+            case "⁻":
+                operator = "subtract";
+                break;
+            default:
+                console.log("Error in operator event listener");
+        }
+    });
 });
