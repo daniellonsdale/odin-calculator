@@ -1,3 +1,9 @@
+//TO DO
+// - clean up code
+// - make it not need to change display text to 0 after hitting an
+//   operator button
+// - limit length for results (use substring on result of operation)
+
 const ceButton = document.querySelector("#ce");
 const cButton = document.querySelector("#c");
 const deleteButton = document.querySelector("#delete");
@@ -118,4 +124,11 @@ operatorButtons.forEach(function(button){
                 console.log("Error in operator event listener");
         }
     });
+});
+
+equalsButton.addEventListener("click", () => {
+    inputTwo = display.textContent;
+    display.textContent = operate(parseFloat(inputOne), parseFloat(inputTwo), operator);
+    inputOne = 0;
+    inputTwo = 0;
 });
