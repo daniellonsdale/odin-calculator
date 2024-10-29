@@ -20,12 +20,13 @@ const decimalButton = document.querySelector("#decimal");
 const equalsButton = document.querySelector("#equals");
 const display = document.querySelector("#display");
 
-let displayValue = 0;
+const numberButtons = document.querySelectorAll(".number");
+
 let inputOne;
 let inputTwo;
 let operator; 
 
-display.textContent = displayValue;
+display.textContent = 0;
 
 function add(numOne, numTwo){
     return numOne + numTwo;
@@ -62,3 +63,12 @@ function operate(numOne, numTwo, oper){
     }
 }
 
+numberButtons.forEach(function(button){
+    button.addEventListener("click", () => {
+        if (display.textContent == 0 && display.textContent.length <= 9){
+            display.textContent = button.textContent;
+        }else if(display.textContent.length <= 9){
+            display.textContent += button.textContent;
+        }
+    });
+});
