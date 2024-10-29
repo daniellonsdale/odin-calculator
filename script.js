@@ -18,12 +18,14 @@ const plusMinusButton = document.querySelector("#plus-minus");
 const zeroButton = document.querySelector("#zero");
 const decimalButton = document.querySelector("#decimal");
 const equalsButton = document.querySelector("#equals");
-const displayButton = document.querySelector("#display");
+const display = document.querySelector("#display");
 
-let displayValue = 0;
+let displayValue;
 let inputOne;
 let inputTwo;
 let operator; 
+
+display.textContent = displayValue;
 
 function add(numOne, numTwo){
     return numOne + numTwo;
@@ -59,3 +61,4 @@ function operate(numOne, numTwo, oper){
             console.log("Error in operate function");
     }
 }
+
