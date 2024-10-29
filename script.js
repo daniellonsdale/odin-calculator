@@ -24,7 +24,8 @@ const numberButtons = document.querySelectorAll(".number");
 
 let inputOne;
 let inputTwo;
-let operator; 
+let operator;
+let curDecimalCount = 0; 
 
 display.textContent = 0;
 
@@ -71,4 +72,11 @@ numberButtons.forEach(function(button){
             display.textContent += button.textContent;
         }
     });
+});
+
+decimalButton.addEventListener("click", () => {
+    if (curDecimalCount == 0){
+        display.textContent += ".";
+        curDecimalCount++;
+    }
 });
