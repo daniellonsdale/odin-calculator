@@ -22,8 +22,8 @@ const display = document.querySelector("#display");
 
 const numberButtons = document.querySelectorAll(".number");
 
-let inputOne;
-let inputTwo;
+let inputOne = 0;
+let inputTwo = 0;
 let operator;
 let curDecimalCount = 0; 
 
@@ -83,4 +83,14 @@ decimalButton.addEventListener("click", () => {
 
 ceButton.addEventListener("click", () => {
     display.textContent = 0;
+});
+
+cButton.addEventListener("click", () => {
+    display.textContent = 0;
+    inputOne = 0;
+    inputTwo = 0;
+});
+
+deleteButton.addEventListener("click", () => {
+    display.textContent = display.textContent.substring(0, display.textContent.length - 1);
 });
