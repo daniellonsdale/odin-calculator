@@ -1,4 +1,4 @@
-const ceButton = document.querySelector("#id");
+const ceButton = document.querySelector("#ce");
 const cButton = document.querySelector("#c");
 const deleteButton = document.querySelector("#delete");
 const divideButton = document.querySelector("#divide");
@@ -79,4 +79,8 @@ decimalButton.addEventListener("click", () => {
         display.textContent += ".";
         curDecimalCount++;
     }
+});
+
+ceButton.addEventListener("click", () => {
+    display.textContent = 0;
 });
