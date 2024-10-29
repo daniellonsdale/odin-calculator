@@ -41,3 +41,21 @@ function divide(numOne, numTwo){
     return numOne/numTwo;
 }
 
+function operate(numOne, numTwo, oper){
+    switch(oper){
+        case "add":
+            return add(numOne, numTwo);
+            break;
+        case "subtract":
+            return subtract(numOne, numTwo);
+            break;
+        case "multiply":
+            return multiply(numOne, numTwo);
+            break;
+        case "divide":
+            return divide(numOne, numTwo);
+            break;
+        default:
+            console.log("Error in operate function");
+    }
+}
