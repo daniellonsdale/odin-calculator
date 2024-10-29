@@ -20,7 +20,7 @@ const decimalButton = document.querySelector("#decimal");
 const equalsButton = document.querySelector("#equals");
 const display = document.querySelector("#display");
 
-let displayValue;
+let displayValue = 0;
 let inputOne;
 let inputTwo;
 let operator; 
